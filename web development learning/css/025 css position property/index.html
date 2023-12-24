@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 450px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: rgb(6, 130, 240);
+            /* position: sticky; */
+            /* top: 0px; */
+            /* height: 111px; */
+            /* width: 100%; */
+            /* margin: 0; */
+            /* padding: 0; */
+
+            /* absolute */
+            position: absolute;
+            top: 25px;
+            left: 13px;
+        }
+
+        .box2 {
+            background-color: aqua;
+            /* position: relative; */
+            /* top: 70px; */
+            /* left: 34px; */
+            /* z-index: -1; */
+        }
+
+        .box3 {
+            background-color: red;
+            /* fixed */
+            /* position: fixed; */
+            /* left: 8vw; */
+            /* top: 50px; */
+        }
+
+        .box4 {
+            /* static */
+            background-color: purple;
+        }
+
+        .parent {
+            /* Important exception:- transform, filter, or prescpective properties can also make element appear as postiioned means this peopersties can also makes a prent potioned */
+            position:sticky;
+            padding: 3px;
+            margin: 34px;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

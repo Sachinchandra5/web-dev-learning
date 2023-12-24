@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        /* Global variable */
+        :root {
+            --color: rgb(41, 253, 41);
+            --seccolor: #92fe7e;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+
+        }
+
+        ul li {
+            list-style-type: none;
+            padding: 30px;
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        /* local variable */
+        ul li:first-child {
+            --color: rgb(251, 191, 12);
+            background-color: var(--color, blue);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eveniet enim voluptatum adipisci doloribus
+        omnis debitis in. Dolor hic, fugiat tempore voluptatibus sint quis culpa saepe ex? Minus fugit illum, rerum,
+        numquam magni quae velit laborum, corporis facere mollitia ut sunt. Officia tempore dolorem natus.
+    </div>
+</body>
+
+</html>

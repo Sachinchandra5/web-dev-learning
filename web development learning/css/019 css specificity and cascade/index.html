@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* selction depend upon postion in same selector  */
+        /* specifity css used according to specification *>h>class>id>inline */
+        /* origin your style overwrite user style */
+        /* important */
+        h1 {
+            color: aqua;
+        }
+
+        h1.yellow {
+            color: yellow;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        .cred {
+            color: red;
+        }
+        /* attriute selector */
+        [data-x="a"]{
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">Css specificity</h1>
+    </div>
+</body>
+
+</html>

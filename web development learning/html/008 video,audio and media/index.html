@@ -1,0 +1,88 @@
+<!-- video -->
+<!-- audio -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video,audio and media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!--  video
+    Attributes for <video> Tag
+    src: Specifies the path to the video file.
+    controls: Adds video controls, like play, pause, and volume.
+    autoplay: Automatically starts playing the video when the page loads.
+    loop: Repeats the video once it ends.
+    muted: Mutes the video by default.
+    poster: Specifies an image to be displayed before the video starts playing.
+    width and height: Specifies the dimensions of the video
+    .-->
+
+    <video src="naruto.mp4" width="250" controls
+        poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kSLxFmNBhIE-E9jGGtYkkNL50rf0qHEHmA&usqp=CAU"></video>
+
+
+
+
+
+
+
+
+        <!-- audio
+        
+        Attributes for <audio> Tag
+src: Specifies the path to the audio file.
+controls: Adds audio controls, like play, pause, and volume.
+autoplay: Automatically starts playing the audio when the page loads.
+loop: Repeats the audio once it ends.
+muted: Mutes the audio by default.
+preload: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata', 'none').
+ 
+
+The "preload" attribute can have the following values:
+
+none: This is the default value. It indicates that the browser should not preload the audio file at all. The audio file will only start downloading when the user initiates playback.
+
+metadata: This value tells the browser to preload only the metadata of the audio file, such as its duration and basic information about the audio. This can be useful if you want to display the audio duration to the user without fully loading the audio data.
+
+auto: This value instructs the browser to preload the entire audio file as much as possible without delaying the loading of other important page content. The browser will try to load the audio file in the background so that it's ready to play when the user decides to start it.
+
+-->
+
+    <audio src="naruto.mp4" preload="" controls></audio>
+
+
+
+<!-- svg -->
+
+<svg height="100" width="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+
+<img src="colorful-blue-bird-watercolor-clipart.lnk" alt="Sample SVG">
+
+<svg height="30" width="30">
+    <rect width="30" height="30" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+</svg>
+
+
+<!-- iframe  -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=NnY6Wger2huMCNId"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28030.572470416606!2d77.25948387373643!3d28.575120582855444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce391b053aeef%3A0x3c66da6bc8fccdde!2sNew%20Friends%20Colony%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1697087242254!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        
+</body>
+
+</html>
